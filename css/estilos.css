@@ -1,0 +1,189 @@
+/* Estilos generales del sitio de perfil profesional */
+
+:root {
+  --color-principal: #1e4078;
+  --color-secundario: #3b82c4;
+  --acento: #ff9f43;
+  --fondo: #f0f5fb;
+  --texto: #222;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(90deg, var(--color-principal), var(--color-secundario));
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav-link {
+  color: #e8eefc;
+  margin: 0 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff;
+  border-bottom: 2px solid var(--acento);
+}
+
+/* franja de título de cada página */
+.banner {
+  background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 25px 0;
+  box-shadow: 0 6px 18px rgba(30, 64, 120, 0.3);
+}
+
+.banner h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.banner p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* presentación de la página de inicio */
+.hero {
+  background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+  color: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 22px rgba(30, 64, 120, 0.35);
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.titulo-seccion {
+  color: var(--color-principal);
+  border-left: 6px solid var(--acento);
+  padding-left: 12px;
+  margin: 35px 0 20px;
+  font-weight: 600;
+}
+
+.foto-perfil {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.tarjeta,
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta {
+  padding: 22px;
+  border-top: 4px solid var(--acento);
+}
+
+.cabecera {
+  background-color: var(--color-principal);
+  color: #fff;
+  border-radius: 14px 14px 0 0 !important;
+}
+
+.icono {
+  color: var(--color-secundario);
+  margin-right: 4px;
+}
+
+.proyecto img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.proyecto,
+.ref-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.proyecto:hover,
+.ref-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.proyecto {
+  overflow: hidden;
+}
+
+.ref-card {
+  border-top: 4px solid var(--acento);
+}
+
+.ref-icono {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e8f1fb;
+  color: var(--color-principal);
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.table thead {
+  background-color: var(--color-principal);
+}
+
+/* clase que se agrega y quita con JavaScript */
+.resaltado {
+  background-color: #fff3cd !important;
+  font-weight: bold;
+}
+
+.oculto {
+  display: none;
+}
+
+.modo-oscuro {
+  background-color: #14181f;
+  color: #e6e6e6;
+}
+
+.modo-oscuro .tarjeta,
+.modo-oscuro .card,
+.modo-oscuro .table,
+.modo-oscuro .list-group-item,
+.modo-oscuro .accordion-item,
+.modo-oscuro .accordion-button {
+  background-color: #222a36;
+  color: #e6e6e6;
+}
+
+.modo-oscuro .ref-icono {
+  background-color: #14181f;
+  color: #9cc4f0;
+}
+
+.modo-oscuro .titulo-seccion {
+  color: #9cc4f0;
+}
+
+footer {
+  background: linear-gradient(90deg, var(--color-principal), var(--color-secundario));
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  margin-top: 50px;
+}
